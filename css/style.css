@@ -56,22 +56,12 @@ h1{
 
 }
 
-p.one{
+p{
   line-height: 1.5em;
   font-family: Georgia, serif;
   position: relative;
   top: 20px;
   left: 30px;
-
-}
-
-p.two{
-  line-height: 1.5em;
-  font-family: Georgia, serif;
-  position: relative;
-  top: 50px;
-  left: 30px;
-
 }
 #cat {
 	position: relative;
@@ -83,28 +73,28 @@ p.two{
 #cat #head {
 	width: 8em;
 	height: 8em;
-	background-color: #ff8533;
+	background-color: #ff9900;
 	border-radius: 5em 5em 5em 5em;
 	z-index: 150;
 	position: relative;
 }
 
 #cat #body {
-	width: 6em;
-	height: 10em;
-	background-color: #ff8533;
-	border-radius: 3em 3em 3em 3em;
+	width: 5em;
+	height: 8em;
+	background-color: #ff9900;
+	border-radius: 2em ;
 	z-index: 100;
 	position: relative;
-  top: -5em;
-  left: 1em;
+  top: -3em;
+  left: 1.5em;
 }
 
 #cat #feet::before {
 	content: '';
-	width: 1em;
+	width: 0.75em;
 	height: 2em;
-	background-color: #ff8533;
+	background-color: #ff9900;
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
 	top: 12em;
@@ -113,9 +103,9 @@ p.two{
 
 #cat #feet::after {
 	content: '';
-	width: 1em;
+	width: 0.75em;
 	height: 2em;
-	background-color: #ff8533;
+	background-color: #ff9900;
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
 	top: 12em;
@@ -281,11 +271,24 @@ p.two{
 	left: 3.5em;
 }
 
+#cat #belly {
+	content: '';
+	width: 3em;
+	height: 4.5em;
+	background-color:	#ffe0b3;
+	border-radius: 1.5em 1.5em 1em 1em;
+	position: absolute;
+	top: 8em;
+	left: 2.5em;
+	z-index: 100;
+}
+
+
 #cat #tail::before {
 	content: '';
 	width: 2.25em;
 	height: 2em;
-	background-color: #ff8533;
+	background-color: #ff9900;
 	border-radius: 0 0 50% 0;
 	position: absolute;
 	top: 10em;
@@ -301,7 +304,7 @@ p.two{
 	border-radius: 0 0 50% 0;
 	position: absolute;
 	top: 9.75em;
-	left: 6em;
+	left: 5.75em;
 	z-index: 10;
 }
 
@@ -310,24 +313,24 @@ p.two{
 #cat #arms::before {
 	content: '';
 	width: 2em;
-	height: 1em;
-	background-color: #ff8533;
+	height: 0.75em;
+	background-color: #ff9900;
 	border-radius: 1em 0 0 1em;
 	position: absolute;
 	top: 7em;
-	left: -1em;
+	left: 0em;
 	z-index: 10;
 }
 
 #cat #arms::after {
 	content: '';
 	width: 2em;
-	height: 1em;
-	background-color: #ff8533;
+	height: 0.75em;
+	background-color: #ff9900;
 	border-radius: 0 1em 1em 0;
 	position: absolute;
 	top: 7em;
-	left: 7em;
+	left: 6em;
 	z-index: 10;
 }
 
@@ -339,7 +342,7 @@ p.two{
   border-top-left-radius: 30%;
   transform: rotate(55deg) skewX(45deg) scale(1,.88);
 
-  background-color: #ff8533;
+  background-color: #ff9900;
 	z-index: 150;
 	position: absolute;
 	top: -0.3em;
@@ -354,9 +357,52 @@ p.two{
   border-top-right-radius: 30%;
   transform: rotate(-55deg) skewX(-45deg) scale(1,.88);
 
-  background-color: #ff8533;
+  background-color: #ff9900;
 	z-index: 150;
 	position: absolute;
 	top: -0.3em;
 	left: 4.2em;
+}
+
+ #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: -100px;
+    left: 100px;
+}
+ #heart:before,
+ #heart:after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 0;
+    width: 10px;
+    height: 16px;
+    background: red;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
 }
