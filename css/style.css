@@ -71,10 +71,12 @@ p{
 	height: 12em;
 }
 #cat #head {
-	width: 8em;
-	height: 8em;
+	width: 9em;
+	height: 7em;
 	background-color: #ff9900;
-	border-radius: 5em 5em 5em 5em;
+	border-radius: 6em 6em 5em 5em/ 5em 5em 4em 4em ;
+  -moz-border-radius: 6em 6em 5em 5em/ 5em 5em 4em 4em ;
+  -webkit-border-radius: 6em 6em 5em 5em/ 5em 5em 4em 4em ;
 	z-index: 150;
 	position: relative;
 }
@@ -86,8 +88,8 @@ p{
 	border-radius: 2em ;
 	z-index: 100;
 	position: relative;
-  top: -3em;
-  left: 1.5em;
+  top: -2.25em;
+  left: 2em;
 }
 
 #cat #feet::before {
@@ -98,7 +100,7 @@ p{
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
 	top: 12em;
-  left: 2em;
+  left: 2.5em;
 }
 
 #cat #feet::after {
@@ -109,7 +111,7 @@ p{
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
 	top: 12em;
-	left: 5em;
+	left: 6em;
 }
 
 #cat #eyes::before {
@@ -122,7 +124,7 @@ p{
   border-radius: 1em / 0.6em;
 	position: absolute;
 	top: 2em;
-	left: 1em;
+	left: 1.25em;
 }
 
 #cat #eyes::after {
@@ -135,7 +137,7 @@ p{
   border-radius: 1em / 0.6em;
 	position: absolute;
 	top: 2em;
-	left: 4.5em;
+	left: 5em;
 }
 
 #cat #pupils::before {
@@ -148,7 +150,7 @@ p{
   border-radius: 0.3em / 0.6em;
 	position: absolute;
 	top: 2em;
-	left: 1.75em;
+	left: 2em;
 }
 
 #cat #pupils::after {
@@ -161,7 +163,7 @@ p{
   border-radius: 0.3em / 0.6em;
 	position: absolute;
 	top: 2em;
-	left: 5.25em;
+	left: 5.75em;
 }
 
 #cat #whisker1::before {
@@ -174,7 +176,7 @@ p{
   -moz-transform: rotate(8deg);
 	position: absolute;
 	top: 3.5em;
-	left: 1.25em;
+	left: 1.75em;
 }
 
 #cat #whisker1::after {
@@ -187,7 +189,7 @@ p{
   -moz-transform: rotate(-8deg);
 	position: absolute;
 	top: 3.5em;
-	left: 4em;
+	left: 4.5em;
 }
 
 #cat #whisker2::before {
@@ -198,7 +200,7 @@ p{
 	border-radius: 0em;
 	position: absolute;
 	top: 3.75em;
-	left: 1.25em;
+	left: 1.75em;
 }
 
 #cat #whisker2::after {
@@ -209,7 +211,7 @@ p{
 	border-radius: 0em;
 	position: absolute;
 	top: 3.75em;
-	left: 4em;
+	left: 4.5em;
 }
 
 #cat #whisker3::before {
@@ -222,7 +224,7 @@ p{
     -moz-transform: rotate(-8deg);
 	position: absolute;
 	top: 4em;
-	left: 1.25em;
+	left: 1.75em;
 }
 
 #cat #whisker3::after {
@@ -235,7 +237,7 @@ p{
     -moz-transform: rotate(8deg);
 	position: absolute;
 	top: 4em;
-	left: 4em;
+	left: 4.5em;
 }
 
 #cat #nose::before {
@@ -245,8 +247,8 @@ p{
 	background-color: #1a0a00;
 	border-radius: 0.5em 0.5em 0.5em 0.5em;
 	position: absolute;
-	top: 3.25em;
-	left: 3em;
+	top: 3.5em;
+	left: 3.5em;
 }
 
 #cat #mouth::before {
@@ -257,7 +259,7 @@ p{
   box-shadow: 1.6px 3.2px 0 -1.2px black;
 	position: absolute;
 	top: 3em;
-	left: 1.5em;
+	left: 2em;
 }
 
 #cat #mouth::after {
@@ -268,7 +270,7 @@ p{
   box-shadow: -1.6px 3.2px 0 -1.2px black;
 	position: absolute;
 	top: 3em;
-	left: 3.5em;
+	left: 4em;
 }
 
 #cat #belly {
@@ -279,7 +281,7 @@ p{
 	border-radius: 1.5em 1.5em 1em 1em;
 	position: absolute;
 	top: 8em;
-	left: 2.5em;
+	left: 3em;
 	z-index: 100;
 }
 
@@ -318,7 +320,7 @@ p{
 	border-radius: 1em 0 0 1em;
 	position: absolute;
 	top: 7em;
-	left: 0em;
+	left: 0.5em;
 	z-index: 10;
 }
 
@@ -330,39 +332,71 @@ p{
 	border-radius: 0 1em 1em 0;
 	position: absolute;
 	top: 7em;
-	left: 6em;
+	left: 6.5em;
 	z-index: 10;
 }
 
 
-#cat .ears::before {
+#cat #ears::before {
   content: '';
   width:  4em;
   height: 4em;
   border-top-left-radius: 30%;
-  transform: rotate(55deg) skewX(45deg) scale(1,.88);
+  transform: rotate(55deg) skewX(40deg) scale(1,.88);
 
   background-color: #ff9900;
-	z-index: 150;
+	z-index: 3;
 	position: absolute;
-	top: -0.3em;
+	top: 0em;
 	left: 0em;
 }
 
 
-#cat .ears::after {
+#cat #ears::after {
   content: '';
   width:  4em;
   height: 4em;
   border-top-right-radius: 30%;
-  transform: rotate(-55deg) skewX(-45deg) scale(1,.88);
+  transform: rotate(-55deg) skewX(-40deg) scale(1,.88);
 
   background-color: #ff9900;
-	z-index: 150;
+	z-index: 3;
 	position: absolute;
-	top: -0.3em;
-	left: 4.2em;
+	top: 0em;
+	left: 5em;
 }
+
+#cat #earsinside::before {
+  content: '';
+  width:  4em;
+  height: 4em;
+  border-top-left-radius: 30%;
+  transform: rotate(55deg) skewX(40deg) scale(1,.88);
+
+  background-color: #ffe0b3;
+	z-index: 5;
+	position: absolute;
+	top: 0.5em;
+	left: 0.2em;
+}
+
+
+#cat #earsinside::after {
+  content: '';
+  width:  4em;
+  height: 4em;
+  border-top-right-radius: 30%;
+  transform: rotate(-55deg) skewX(-40deg) scale(1,.88);
+
+  background-color: #ffe0b3;
+	z-index: 5;
+	position: absolute;
+	top: 0.5em;
+	left: 4.9em;
+}
+
+
+
 
  #heart {
     position: relative;
